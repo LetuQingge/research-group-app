@@ -17,7 +17,6 @@ import {
   CancelOutlined,
   Close,
 } from "@mui/icons-material";
-import useOnScreen from "../../hooks/useOnScreen";
 import defaultProfile from "../../assets/images/defaultProfile.png";
 import profile1 from "../../assets/images/profile1.jpg";
 import profile2 from "../../assets/images/profile2.jpg";
