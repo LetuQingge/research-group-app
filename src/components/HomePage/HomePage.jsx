@@ -201,10 +201,6 @@ const HomePage = () => {
   const open = Boolean(anchorEl);
   const scrollRef = useRef(null);
 
-  // const isVisible = useOnScreen(pageRef);
-
-  // isVisible && console.log(`Yep, I'm on screen`);
-
   useEffect(() => {
     if (pageRef?.current) {
       pageRef.current.scrollIntoView({
@@ -228,11 +224,6 @@ const HomePage = () => {
     }, 600);
   }, [isRotate]);
 
-  // const onScrollHandler = (e) => {
-  //   const scrollTop = e.currentTarget.scrollTop;
-  //   console.log(`onScroll, myRef.scrollTop: ${scrollTop}`);
-  // };
-
   return (
     <div
       ref={scrollRef}
@@ -250,9 +241,6 @@ const HomePage = () => {
           fontSize: "2rem",
           margin: "0.8rem",
           cursor: "pointer",
-          // fill: "rgba(0,0,0,0.6)",
-          // opacity: "0.8",
-          // animationIterationCount: 1,
         }}
         onClick={() => setActiveNav("Home")}
       />
@@ -262,21 +250,16 @@ const HomePage = () => {
         className="homePage-main"
         style={{
           height: "100vh",
-          // width: "100%",
           flex: 1,
           display: "flex",
           backgroundImage: `url(${bg})`,
-          // backgroundSize: "100% 120%",
           backgroundSize: "auto 120vh",
           backgroundRepeat: "no-repeat",
-          // backgroundPosition: "100% 55%",
           backgroundPosition: "center center",
           justifyContent: "center",
           alignItems: "center",
           animation: "zoomInOut ease 8s infinite alternate",
           position: "relative",
-          // animationIterationCount: "infinite",
-          // animationFillMode: "forwards",
         }}
       >
         <ArrowCircleDown
@@ -285,31 +268,22 @@ const HomePage = () => {
             position: "absolute",
             bottom: "20px",
             fontSize: "2rem",
-            // fill: "rgba(0,0,0,0.6)",
-            // opacity: "0.8",
             animation: "scrollDownIndicator ease 1s infinite",
-            // animationIterationCount: 1,
           }}
         />
         <div
           style={{
             textAlign: "center",
             animation: "fadeIn ease 10s",
-            // animationIterationCount: 1,
             animationFillMode: "forwards",
-            // position: "fixed",
           }}
         >
           <div
-            // className="fadeIn"
             style={{
               fontSize: "4.5rem",
               fontWeight: "bolder",
               color: "#fff",
-              // opacity: 0,
-              // animation: "fadeIn 5s forward ease-in",
               animation: "leftToRight ease 5s",
-              // animationIterationCount: 1,
               animationFillMode: "forwards",
             }}
           >
@@ -320,7 +294,6 @@ const HomePage = () => {
               fontWeight: 500,
               color: "#fff",
               animation: "rightToLeft ease 5s",
-              // animationIterationCount: 1,
               animationFillMode: "forwards",
             }}
           >
@@ -338,7 +311,6 @@ const HomePage = () => {
             animation: isRotate
               ? "rotateRight ease 0.5s"
               : "rotateLeft ease 0.5s",
-            // animationIterationCount: 1,
             animationFillMode: "forwards",
             backgroundColor: "rgba(0,0,0,0.5)",
             boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px !important",
@@ -487,7 +459,6 @@ const HomePage = () => {
                   fontSize: "1rem",
                 }}
               >
-                {/* <span style={{ fontWeight: "bold" }}>Published Year:</span>{" "} */}
                 {item.year}
               </span>
             </div>
@@ -537,10 +508,6 @@ const HomePage = () => {
         </div>
         <div
           style={{
-            // display: "flex",
-            // flexDirection: "row",
-            // flexWrap: "wrap",
-            // justifyContent: "",
             margin: "1rem 0 2rem 0",
           }}
         >
@@ -554,14 +521,11 @@ const HomePage = () => {
                 borderRadius: "20px",
                 fontSize: "1.1rem",
                 boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
-                // maxWidth: "25rem",
-                // minWidth: "25rem",
                 display: "flex",
                 flexDirection: "row",
                 fontWeight: "500",
                 fontSize: "1.1rem",
                 width: "fit-content",
-                // alignSelf: i % 2 === 0 ? "flex-start" : "flex-end",
               }}
             >
               {item.split(",")[0]}{" "}
@@ -584,8 +548,6 @@ const HomePage = () => {
       <div
         style={{
           padding: "2rem 10rem",
-          // display: "flex",
-          // flexDirection: "column",
         }}
         id="People"
         ref={activeNav === "People" ? pageRef : null}
@@ -603,20 +565,15 @@ const HomePage = () => {
               borderRadius: "20px",
               fontSize: "1.1rem",
               boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
-              // maxWidth: "50rem",
-              // minWidth: "50rem",
               display: "flex",
               flexDirection: "row",
-              // alignSelf: i % 2 === 0 ? "flex-start" : "flex-end",
             }}
           >
             <div
               style={{
                 height: "10rem",
                 width: "10rem",
-                // border: "0.5px solid ",
                 marginRight: "1.5rem",
-                // borderRadius: "4px",
               }}
             >
               <img
@@ -646,7 +603,6 @@ const HomePage = () => {
                     fontSize: "0.9rem",
                   }}
                 >
-                  {/* <span style={{ fontWeight: "bold" }}>Published Year:</span>{" "} */}
                   {item.qualification}
                 </span>
               </div>
@@ -681,9 +637,7 @@ const HomePage = () => {
             style={{
               height: "15rem",
               width: "15rem",
-              // border: "0.5px solid ",
               marginRight: "1.5rem",
-              // borderRadius: "4px",
             }}
           >
             <img
@@ -700,7 +654,6 @@ const HomePage = () => {
                 flexDirection: "row",
                 justifyContent: "space-between",
                 alignItems: "center",
-                // marginBottom: "0.5rem",
               }}
             >
               <span style={{ fontSize: "1.6rem", color: "#000" }}>
@@ -715,7 +668,6 @@ const HomePage = () => {
                   fontSize: "0.9rem",
                 }}
               >
-                {/* <span style={{ fontWeight: "bold" }}>Published Year:</span>{" "} */}
                 {aboutPI.designation}
               </span>
             </div>
