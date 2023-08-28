@@ -287,7 +287,7 @@ const HomePage = () => {
               animationFillMode: "forwards",
             }}
           >
-            Dr. Letu Qingge Group
+            Dr. Letu Qingge Lab
           </div>
           <div
             style={{
@@ -297,7 +297,7 @@ const HomePage = () => {
               animationFillMode: "forwards",
             }}
           >
-            Research Group in Deep Learning at NCAT
+            Research Group in AI at NCAT
           </div>
         </div>
         <IconButton
