@@ -369,16 +369,8 @@ const HomePage = () => {
                 paddingBottom: "1rem",
               }}
             >
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
+              Our paper titled "A Convolutional Denoising Autoencoder for Protein Scaffold Filling" is accepted by 19th International Symposium on Bioinformatics Research and Applications (ISBRA 2023), August 2023.
+              Congrats to my graduate students Jordan Sturtz and Richard Annan!
             </li>
           ))}
         </ul>
