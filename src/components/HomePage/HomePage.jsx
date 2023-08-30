@@ -75,11 +75,11 @@ const publications = [
 
 const teachings = [
   "COMP 496 Senior Project II, Fall 2023",
+  "COMP 496 Senior Project II, Fall 2023",
   "COMP 385 Theory of Computing, Fall 2023",
   "COMP 841 Deep Learning, Spring 2023",
   "COMP 385 Theory of Computing, Fall 2022",
   "COMP 496 Senior Project II, Fall 2022",
-  "COMP 841 Deep Learning, Spring 2022",
   "COMP 496 Senior Project II, Spring 2022",
   "COMP 285 Analysis of Algorithms, Fall 2021",
   "COMP 496 Senior Project II, Fall 2021",
