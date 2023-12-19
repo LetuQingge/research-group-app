@@ -36,7 +36,22 @@ body {
 }
 
 .App {
-  height: 100vh;
+  height: 100%;
   width: 100%;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.5s ease;
+  position: relative;
+  // background-color: red;
+  // & div > a {
+  //   color: red;
+  // }
+
+  & .backgroundImage::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(transparent 20%, rgb(0, 0, 0) 80%);
+  }
 }

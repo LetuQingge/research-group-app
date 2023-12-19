@@ -18,8 +18,8 @@ import {
   Close,
 } from "@mui/icons-material";
 import defaultProfile from "../../assets/images/defaultProfile.png";
-import profile1 from "../../assets/images/profile1.jpg";
-import profile2 from "../../assets/images/profile2.jpg";
+// import profile1 from "../../assets/images/profile1.jpg";
+// import profile2 from "../../assets/images/profile2.jpg";
 
 const menuItem = [
   "Home",
@@ -120,7 +120,7 @@ const people = [
     description: `Alexis Cathcart is an incoming Master's student from Charlotte, NC. She will complete her 
     Bachelor's in Computer Science at North Carolina A&T State University in May 2023. Her research interests 
     include artificial intelligence, machine learning, data science, and bioinformatics. `,
-    img: profile1,
+    // img: profile1,
   },
   {
     name: "Mr. Nicholas Rader",
@@ -129,7 +129,7 @@ const people = [
     ad evaluator at Appen. He is an aspiring Application/Web Developer in Kernersville, NC. He is passionate about 
     UI/UX design, graphics, and creating responsive and interactive apps for all users to enjoy worldwide! He graduated 
     in 2022 from High Point University with a bachelor of science in computer science. `,
-    img: profile2,
+    // img: profile2,
   },
   {
     name: "Mr. Justin Noland",
@@ -371,8 +371,11 @@ const HomePage = () => {
                 paddingBottom: "1rem",
               }}
             >
-              Our paper titled "A Convolutional Denoising Autoencoder for Protein Scaffold Filling" is accepted by 19th International Symposium on Bioinformatics Research and Applications (ISBRA 2023), August 2023.
-              Congrats to my graduate students Jordan Sturtz and Richard Annan!
+              Our paper titled "A Convolutional Denoising Autoencoder for
+              Protein Scaffold Filling" is accepted by 19th International
+              Symposium on Bioinformatics Research and Applications (ISBRA
+              2023), August 2023. Congrats to my graduate students Jordan Sturtz
+              and Richard Annan!
             </li>
           ))}
         </ul>
