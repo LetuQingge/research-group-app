@@ -7,6 +7,7 @@ import alexis from "../../assets/images/alexis.jpg";
 import nicholas from "../../assets/images/nicholas.jpg";
 import jordan from "../../assets/images/jordan.jpg";
 import justin from "../../assets/images/justin.jpeg";
+import "./People.scss";
 
 const people = [
   {
@@ -72,62 +73,29 @@ const people = [
 
 const People = () => {
   return (
-    <div
-      style={{
-        padding: "2rem 10rem",
-      }}
-      id="People"
-      //   ref={activeNav === "People" ? pageRef : null}
-    >
-      <div style={{ fontSize: "1.8rem", fontWeight: "bold", padding: "0" }}>
-        People
-      </div>
+    <div className="people-main">
+      <div className="people-main__title">People</div>
       {people.map((item, i) => (
         <div
           key={i}
+          className="people-main__card"
           style={{
-            margin: "1rem 0 2rem 0",
-            padding: "1.5rem",
             backgroundColor: i % 2 === 0 ? "lightblue" : "antiquewhite",
-            borderRadius: "20px",
-            fontSize: "1.1rem",
-            boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
-            display: "flex",
-            flexDirection: "row",
           }}
         >
-          <div
-            style={{
-              height: "10rem",
-              width: "10rem",
-              marginRight: "1.5rem",
-            }}
-          >
+          <div className="people-main__card__imageContainer">
             <img
               src={item?.img ? item?.img : defaultProfile}
-              style={{ height: "10rem", borderRadius: "4px" }}
+              className="people-main__card__imageContainer__image"
             />
           </div>
-          <div style={{ width: "100%" }}>
-            <div
-              style={{
-                fontWeight: "bold",
-                fontSize: "1.2rem",
-                display: "flex",
-                flexDirection: "row",
-                justifyContent: "space-between",
-                alignItems: "center",
-                marginBottom: "0.5rem",
-              }}
-            >
+          <div className="people-main__card__textContainer">
+            <div className="people-main__card__textContainer__nameAndQualificationContainer">
               <span>{item.name}</span>
               <span
+                className="people-main__card__textContainer__nameAndQualificationContainer__qualification"
                 style={{
-                  padding: "0.2rem 1rem",
                   backgroundColor: i % 2 !== 0 ? "lightblue" : "antiquewhite",
-                  borderRadius: "4px",
-                  boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
-                  fontSize: "0.9rem",
                 }}
               >
                 {item.qualification}

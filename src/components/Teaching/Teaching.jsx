@@ -1,4 +1,5 @@
 import React from "react";
+import "./Teaching.scss";
 
 const teachings = [
   "COMP 496 Senior Project II, Fall 2023",
@@ -17,54 +18,13 @@ const teachings = [
 
 const Teaching = () => {
   return (
-    <div
-      style={{
-        padding: "2rem 10rem",
-        display: "flex",
-        flexDirection: "column",
-      }}
-      id="Teaching"
-      // ref={activeNav === "Teaching" ? pageRef : null}
-    >
-      <div style={{ fontSize: "1.8rem", fontWeight: "bold", padding: "0" }}>
-        Teaching
-      </div>
-      <div
-        style={{
-          margin: "1rem 0 2rem 0",
-          display: "flex",
-          flexDirection: "row",
-          flexWrap: "wrap",
-        }}
-      >
+    <div className="teaching-main">
+      <div className="teaching-main__title">Teaching</div>
+      <div className="teaching-main__container">
         {teachings.map((item, i) => (
-          <div
-            key={i}
-            style={{
-              margin: "1rem 1rem 2rem 1rem",
-              padding: "1rem",
-              backgroundColor: "antiquewhite",
-              borderRadius: "20px",
-              fontSize: "1.1rem",
-              boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
-              display: "flex",
-              flexDirection: "row",
-              fontWeight: "500",
-              fontSize: "1.1rem",
-              width: "fit-content",
-            }}
-          >
+          <div key={i} className="teaching-main__container__card">
             {item.split(",")[0]}{" "}
-            <span
-              style={{
-                marginLeft: "2rem",
-                padding: "0rem 1rem",
-                backgroundColor: "lightblue",
-                borderRadius: "4px",
-                boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
-                fontSize: "1rem",
-              }}
-            >
+            <span className="teaching-main__container__card__text">
               {item.split(",")[1]}
             </span>
           </div>

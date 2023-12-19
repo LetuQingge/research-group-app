@@ -1,17 +1,10 @@
 import React from "react";
+import "./Positions.scss";
 
 const Positions = () => {
   return (
-    <div
-      style={{
-        padding: "2rem 10rem",
-      }}
-      id="Positions"
-      //   ref={activeNav === "Positions" ? pageRef : null}
-    >
-      <div style={{ fontSize: "1.8rem", fontWeight: "bold", padding: "0" }}>
-        Positions
-      </div>
+    <div className="positions-main">
+      <div className="positions-main__title">Positions</div>
       <ul>
         <li style={{ paddingBottom: "1rem" }}>
           Actively looking for self-motivated Ph.D. and Master students who are

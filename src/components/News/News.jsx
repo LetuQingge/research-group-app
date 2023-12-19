@@ -1,4 +1,5 @@
 import React from "react";
+import "./News.scss";
 
 const news = [
   `Our paper titled "Parallel Trajectory Training of Recurrent Neural Network Controllers with Levenberg-Marquardt 
@@ -20,16 +21,8 @@ Rim International Conference on Artificial Intelligence (PRICAI), Jakarta, Indon
 
 const News = () => {
   return (
-    <div
-      style={{
-        padding: "2rem 10rem",
-      }}
-      id="News"
-      //   ref={activeNav === "News" ? pageRef : null}
-    >
-      <div style={{ fontSize: "1.8rem", fontWeight: "bold", padding: "0" }}>
-        News
-      </div>
+    <div className="news-main">
+      <div className="news-main__title">News</div>
       <ul>
         {news.map((item, i) => (
           <li

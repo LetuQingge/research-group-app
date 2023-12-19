@@ -5,38 +5,38 @@
     background: red;
   }
 
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  @keyframes leftToRight {
-    0% {
-      transform: translateX(-100%);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
-  @keyframes rightToLeft {
-    0% {
-      transform: translateX(100%);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
-  @keyframes zoomInOut {
-    0% {
-      background-size: auto 140vh;
-    }
-    100% {
-      background-size: auto 130vh;
-    }
-  }
+  // @keyframes fadeIn {
+  //   0% {
+  //     opacity: 0;
+  //   }
+  //   100% {
+  //     opacity: 1;
+  //   }
+  // }
+  // @keyframes leftToRight {
+  //   0% {
+  //     transform: translateX(-100%);
+  //   }
+  //   100% {
+  //     transform: translateX(0);
+  //   }
+  // }
+  // @keyframes rightToLeft {
+  //   0% {
+  //     transform: translateX(100%);
+  //   }
+  //   100% {
+  //     transform: translateX(0);
+  //   }
+  // }
+  // @keyframes zoomInOut {
+  //   0% {
+  //     background-size: auto 140vh;
+  //   }
+  //   100% {
+  //     background-size: auto 130vh;
+  //   }
+  // }
   //   @keyframes zoomInOut {
   //     0% {
   //       background-size: auto 140vh;
@@ -45,28 +45,28 @@
   //       background-size: auto 150vh;
   //     }
   //   }
-  @keyframes rotateRight {
-    0% {
-      transform: rotate(0);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  @keyframes rotateLeft {
-    0% {
-      transform: rotate(360deg);
-    }
-    100% {
-      transform: rotate(0);
-    }
-  }
-  @keyframes scrollDownIndicator {
-    0% {
-      bottom: 40px;
-    }
-    100% {
-      bottom: 20px;
-    }
-  }
+  // @keyframes rotateRight {
+  //   0% {
+  //     transform: rotate(0);
+  //   }
+  //   100% {
+  //     transform: rotate(360deg);
+  //   }
+  // }
+  // @keyframes rotateLeft {
+  //   0% {
+  //     transform: rotate(360deg);
+  //   }
+  //   100% {
+  //     transform: rotate(0);
+  //   }
+  // }
+  // @keyframes scrollDownIndicator {
+  //   0% {
+  //     bottom: 40px;
+  //   }
+  //   100% {
+  //     bottom: 20px;
+  //   }
+  // }
 }

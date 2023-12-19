@@ -1,4 +1,5 @@
 import React from "react";
+import "./Research.scss";
 
 const research = [
   "Algorithms and Combinatorial Optimization",
@@ -12,16 +13,8 @@ const research = [
 
 const Research = () => {
   return (
-    <div
-      style={{
-        padding: "2rem 10rem",
-      }}
-      id="Research"
-      // ref={activeNav === "Research" ? pageRef : null}
-    >
-      <div style={{ fontSize: "1.8rem", fontWeight: "bold", padding: "0" }}>
-        Research
-      </div>
+    <div className="research-main">
+      <div className="research-main__title">Research</div>
       <ul>
         {research.map((item, i) => (
           <li key={i} style={{ paddingBottom: "1rem" }}>

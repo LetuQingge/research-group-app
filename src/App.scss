@@ -35,17 +35,24 @@ body {
   font-weight: 600;
 }
 
-.App {
+.app {
   height: 100%;
   width: 100%;
   transition: all 0.5s ease;
   position: relative;
-  // background-color: red;
-  // & div > a {
-  //   color: red;
-  // }
 
-  & .backgroundImage::before {
+  &__backgroundImage {
+    height: 100%;
+    width: 100%;
+    background-image: url(./assets/images/bg3.jpeg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: fixed;
+    overflow: hidden;
+    animation: zoomInOut ease 8s infinite alternate;
+  }
+  &__backgroundImage::before {
     content: "";
     position: absolute;
     top: 0;
@@ -53,5 +60,26 @@ body {
     bottom: 0;
     left: 0;
     background: linear-gradient(transparent 20%, rgb(0, 0, 0) 80%);
+  }
+
+  &__headerContainer {
+    position: absolute;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+  }
+  &__contentContainer {
+    position: relative;
+    background: #fff;
+  }
+
+  @keyframes zoomInOut {
+    0% {
+      background-size: 110% 110%;
+    }
+    100% {
+      background-size: 100% 100%;
+    }
   }
 }

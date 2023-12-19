@@ -2,7 +2,6 @@ import React from "react";
 import "./Home.scss";
 import defaultProfile from "../../assets/images/defaultProfile.png";
 import PIImage from "../../assets/images/PI_Image.jpg";
-// import profile2 from "../../assets/images/profile2.jpg";
 
 const aboutPI = {
   name: "Dr. Letu Qingge",
@@ -27,243 +26,34 @@ const aboutPI = {
 
 const Home = () => {
   return (
-    <div
-      style={{
-        padding: "2rem 10rem",
-      }}
-      id="About PI"
-      //   ref={activeNav === "About PI" ? pageRef : null}
-    >
-      <div style={{ fontSize: "1.8rem", fontWeight: "bold", padding: "0" }}>
-        About PI
-      </div>
-      <div
-        style={{
-          margin: "1rem 0 2rem 0",
-          padding: "1.5rem",
-          backgroundColor: "lightblue",
-          borderRadius: "20px",
-          fontSize: "1.1rem",
-          boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
-          display: "flex",
-          flexDirection: "row",
-        }}
-      >
-        <div
-          style={{
-            height: "15rem",
-            width: "15rem",
-            marginRight: "1.5rem",
-          }}
-        >
+    <div className="home-main">
+      <div className="home-main__title">About PI</div>
+      <div className="home-main__content">
+        <div className="home-main__content__imageContainer">
           <img
             src={aboutPI?.img ? aboutPI?.img : defaultProfile}
-            style={{ height: "15rem", borderRadius: "4px" }}
+            className="home-main__content__imageContainer__image"
           />
         </div>
-        <div style={{ width: "100%" }}>
-          <div
-            style={{
-              fontWeight: "bold",
-              fontSize: "1.2rem",
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "space-between",
-              alignItems: "center",
-            }}
-          >
-            <span style={{ fontSize: "1.6rem", color: "#000" }}>
+        <div className="home-main__content__textContainer">
+          <div className="home-main__content__textContainer__nameAndDesignationContainer">
+            <span className="home-main__content__textContainer__nameAndDesignationContainer__name">
               {aboutPI.name}
             </span>
-            <span
-              style={{
-                padding: "0.2rem 1rem",
-                backgroundColor: "antiquewhite",
-                borderRadius: "4px",
-                boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
-                fontSize: "0.9rem",
-              }}
-            >
+            <span className="home-main__content__textContainer__nameAndDesignationContainer__designation">
               {aboutPI.designation}
             </span>
           </div>
-          <div style={{ fontSize: "1rem" }}>{aboutPI.college}</div>
-          <div style={{ fontSize: "1rem" }}>{aboutPI.department}</div>
-          <div style={{ fontSize: "1rem", marginTop: "0.5rem" }}>
-            <span style={{ fontWeight: "bold" }}>About: </span>
-            {aboutPI.description}
+          <div className="home-main__content__textContainer__commonText">
+            {aboutPI.college}
           </div>
-        </div>
-      </div>
-      <div
-        style={{
-          margin: "1rem 0 2rem 0",
-          padding: "1.5rem",
-          backgroundColor: "lightblue",
-          borderRadius: "20px",
-          fontSize: "1.1rem",
-          boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
-          display: "flex",
-          flexDirection: "row",
-        }}
-      >
-        <div
-          style={{
-            height: "15rem",
-            width: "15rem",
-            marginRight: "1.5rem",
-          }}
-        >
-          <img
-            src={aboutPI?.img ? aboutPI?.img : defaultProfile}
-            style={{ height: "15rem", borderRadius: "4px" }}
-          />
-        </div>
-        <div style={{ width: "100%" }}>
+          <div className="home-main__content__textContainer__commonText">
+            {aboutPI.department}
+          </div>
           <div
-            style={{
-              fontWeight: "bold",
-              fontSize: "1.2rem",
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "space-between",
-              alignItems: "center",
-            }}
+            className="home-main__content__textContainer__commonText"
+            style={{ marginTop: "0.5rem" }}
           >
-            <span style={{ fontSize: "1.6rem", color: "#000" }}>
-              {aboutPI.name}
-            </span>
-            <span
-              style={{
-                padding: "0.2rem 1rem",
-                backgroundColor: "antiquewhite",
-                borderRadius: "4px",
-                boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
-                fontSize: "0.9rem",
-              }}
-            >
-              {aboutPI.designation}
-            </span>
-          </div>
-          <div style={{ fontSize: "1rem" }}>{aboutPI.college}</div>
-          <div style={{ fontSize: "1rem" }}>{aboutPI.department}</div>
-          <div style={{ fontSize: "1rem", marginTop: "0.5rem" }}>
-            <span style={{ fontWeight: "bold" }}>About: </span>
-            {aboutPI.description}
-          </div>
-        </div>
-      </div>
-      <div
-        style={{
-          margin: "1rem 0 2rem 0",
-          padding: "1.5rem",
-          backgroundColor: "lightblue",
-          borderRadius: "20px",
-          fontSize: "1.1rem",
-          boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
-          display: "flex",
-          flexDirection: "row",
-        }}
-      >
-        <div
-          style={{
-            height: "15rem",
-            width: "15rem",
-            marginRight: "1.5rem",
-          }}
-        >
-          <img
-            src={aboutPI?.img ? aboutPI?.img : defaultProfile}
-            style={{ height: "15rem", borderRadius: "4px" }}
-          />
-        </div>
-        <div style={{ width: "100%" }}>
-          <div
-            style={{
-              fontWeight: "bold",
-              fontSize: "1.2rem",
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "space-between",
-              alignItems: "center",
-            }}
-          >
-            <span style={{ fontSize: "1.6rem", color: "#000" }}>
-              {aboutPI.name}
-            </span>
-            <span
-              style={{
-                padding: "0.2rem 1rem",
-                backgroundColor: "antiquewhite",
-                borderRadius: "4px",
-                boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
-                fontSize: "0.9rem",
-              }}
-            >
-              {aboutPI.designation}
-            </span>
-          </div>
-          <div style={{ fontSize: "1rem" }}>{aboutPI.college}</div>
-          <div style={{ fontSize: "1rem" }}>{aboutPI.department}</div>
-          <div style={{ fontSize: "1rem", marginTop: "0.5rem" }}>
-            <span style={{ fontWeight: "bold" }}>About: </span>
-            {aboutPI.description}
-          </div>
-        </div>
-      </div>
-      <div
-        style={{
-          margin: "1rem 0 2rem 0",
-          padding: "1.5rem",
-          backgroundColor: "lightblue",
-          borderRadius: "20px",
-          fontSize: "1.1rem",
-          boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
-          display: "flex",
-          flexDirection: "row",
-        }}
-      >
-        <div
-          style={{
-            height: "15rem",
-            width: "15rem",
-            marginRight: "1.5rem",
-          }}
-        >
-          <img
-            src={aboutPI?.img ? aboutPI?.img : defaultProfile}
-            style={{ height: "15rem", borderRadius: "4px" }}
-          />
-        </div>
-        <div style={{ width: "100%" }}>
-          <div
-            style={{
-              fontWeight: "bold",
-              fontSize: "1.2rem",
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "space-between",
-              alignItems: "center",
-            }}
-          >
-            <span style={{ fontSize: "1.6rem", color: "#000" }}>
-              {aboutPI.name}
-            </span>
-            <span
-              style={{
-                padding: "0.2rem 1rem",
-                backgroundColor: "antiquewhite",
-                borderRadius: "4px",
-                boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
-                fontSize: "0.9rem",
-              }}
-            >
-              {aboutPI.designation}
-            </span>
-          </div>
-          <div style={{ fontSize: "1rem" }}>{aboutPI.college}</div>
-          <div style={{ fontSize: "1rem" }}>{aboutPI.department}</div>
-          <div style={{ fontSize: "1rem", marginTop: "0.5rem" }}>
             <span style={{ fontWeight: "bold" }}>About: </span>
             {aboutPI.description}
           </div>
