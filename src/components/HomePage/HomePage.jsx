@@ -20,6 +20,7 @@ import {
 import defaultProfile from "../../assets/images/defaultProfile.png";
 import profile1 from "../../assets/images/profile1.jpg";
 import profile2 from "../../assets/images/profile2.jpg";
+import Teaching from "../Teachings/Teaching";
 
 const menuItem = [
   "Home",
@@ -371,8 +372,11 @@ const HomePage = () => {
                 paddingBottom: "1rem",
               }}
             >
-              Our paper titled "A Convolutional Denoising Autoencoder for Protein Scaffold Filling" is accepted by 19th International Symposium on Bioinformatics Research and Applications (ISBRA 2023), August 2023.
-              Congrats to my graduate students Jordan Sturtz and Richard Annan!
+              Our paper titled "A Convolutional Denoising Autoencoder for
+              Protein Scaffold Filling" is accepted by 19th International
+              Symposium on Bioinformatics Research and Applications (ISBRA
+              2023), August 2023. Congrats to my graduate students Jordan Sturtz
+              and Richard Annan!
             </li>
           ))}
         </ul>
@@ -489,38 +493,40 @@ const HomePage = () => {
         </ul>
       </div>
       <div
-        style={{
-          padding: "2rem 10rem",
-          display: "flex",
-          flexDirection: "column",
-        }}
+        className="homePage-main__teaching-main"
         id="Teaching"
         ref={activeNav === "Teaching" ? pageRef : null}
       >
-        <div style={{ fontSize: "1.8rem", fontWeight: "bold", padding: "0" }}>
+        {/* <div style={{ fontSize: "1.8rem", fontWeight: "bold", padding: "0" }}>
           Teaching
-        </div>
-        <div
+        </div> */}
+        <Teaching />
+        {/* <div
           style={{
             margin: "1rem 0 2rem 0",
+            display: "flex",
+            flexDirection: "row",
+            flexWrap: "wrap",
           }}
         >
           {teachings.map((item, i) => (
             <div
               key={i}
-              style={{
-                margin: "1rem 1rem 2rem 1rem",
-                padding: "1rem",
-                backgroundColor: "antiquewhite",
-                borderRadius: "20px",
-                fontSize: "1.1rem",
-                boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
-                display: "flex",
-                flexDirection: "row",
-                fontWeight: "500",
-                fontSize: "1.1rem",
-                width: "fit-content",
-              }}
+              className="homePage-main__teaching-main__card"
+              // style={{
+              //   // margin: "1rem 1rem 2rem 1rem",
+              //   // padding: "1rem",
+              //   // backgroundColor: "antiquewhite",
+              //   // borderRadius: "20px",
+              //   // fontSize: "1.1rem",
+              //   // boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
+              //   // display: "flex",
+              //   // flexDirection: "row",
+              //   // fontWeight: "500",
+              //   // fontSize: "1.1rem",
+              //   // width: "fit-content",
+
+              // }}
             >
               {item.split(",")[0]}{" "}
               <span
@@ -537,7 +543,7 @@ const HomePage = () => {
               </span>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
       <div
         style={{
