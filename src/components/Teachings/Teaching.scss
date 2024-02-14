@@ -1,0 +1,66 @@
+.teaching-main {
+  position: relative;
+  width: 100%;
+  margin: 20px auto;
+  &__title {
+    font-size: 28px;
+    font-weight: bold;
+    padding: 0;
+  }
+  &__container {
+    margin: 1rem 0 2rem 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    &__card {
+      margin: 1rem 1rem 2rem 1rem;
+      padding: 1rem;
+      background-color: antiquewhite;
+      border-radius: 20px;
+      font-size: 14px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      display: flex;
+      flex-direction: row;
+      font-weight: 500;
+      justify-content: space-between;
+      width: 28%;
+      // width: fit-content;
+      &__text {
+        // margin-left: 2rem;
+        padding: 0rem 1rem;
+        background-color: lightblue;
+        border-radius: 4px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        font-size: 13px;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1324px) {
+  .teaching-main {
+    &__container {
+      &__card {
+        width: 40%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Adjustments for mobile devices */
+  .teaching-main {
+    width: 90%;
+    &__container {
+      &__card {
+        width: 60%;
+      }
+    }
+    // padding: 5px 50px;
+    &__title {
+      font-size: 22px;
+    }
+  }
+}
