@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/research-group-app/static/css/main.b0413192.css",
-    "main.js": "/research-group-app/static/js/main.7bb613b3.js",
+    "main.js": "/research-group-app/static/js/main.1d3df484.js",
     "static/js/787.98417764.chunk.js": "/research-group-app/static/js/787.98417764.chunk.js",
     "static/media/ERIC.png": "/research-group-app/static/media/ERIC.b76993867dc0b71648da.png",
     "static/media/justin.JPG": "/research-group-app/static/media/justin.426979b28f51904347ce.JPG",
+    "static/media/kaylan.jpg": "/research-group-app/static/media/kaylan.4cba5e9936f9cce28fb6.jpg",
     "static/media/defaultProfile.png": "/research-group-app/static/media/defaultProfile.9f4216a5681671b0bbb5.png",
     "static/media/profile1.jpg": "/research-group-app/static/media/profile1.bb68e1b56821a7a484d6.jpg",
     "static/media/profile2.jpg": "/research-group-app/static/media/profile2.d9ae5593579cde1c7805.jpg",
@@ -18,11 +19,11 @@
     "static/media/Richard.jpg": "/research-group-app/static/media/Richard.a334fbccdf8dd53ba9fb.jpg",
     "index.html": "/research-group-app/index.html",
     "main.b0413192.css.map": "/research-group-app/static/css/main.b0413192.css.map",
-    "main.7bb613b3.js.map": "/research-group-app/static/js/main.7bb613b3.js.map",
+    "main.1d3df484.js.map": "/research-group-app/static/js/main.1d3df484.js.map",
     "787.98417764.chunk.js.map": "/research-group-app/static/js/787.98417764.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b0413192.css",
-    "static/js/main.7bb613b3.js"
+    "static/js/main.1d3df484.js"
   ]
 }
